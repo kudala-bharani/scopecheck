@@ -1,0 +1,140 @@
+{
+  "runtime": "Native ONNX CPU via Transformers.js 3.8.1; production browser path not verified",
+  "note": "Illustrative sample chosen for clear workflow coverage, not an accuracy benchmark.",
+  "scope": [
+    "Design and build a responsive five-page website: Home, About, Services, Work, and Contact.",
+    "Include a contact form that sends submissions by email.",
+    "Include up to two rounds of design revisions.",
+    "CRM integrations are excluded from this project.",
+    "The client supplies all final copy and images."
+  ],
+  "rows": [
+    {
+      "request": "Please include an email contact form.",
+      "label": "covered",
+      "reason": "The model found strong textual support. Verify the deliverable and all surrounding scope before relying on this suggestion.",
+      "evidence": [
+        1,
+        3
+      ],
+      "scores": [
+        {
+          "contradiction": 0.0016995915326154737,
+          "entailment": 0.0009403381453926478,
+          "neutral": 0.9973600703219918
+        },
+        {
+          "contradiction": 0.00034016691377130226,
+          "entailment": 0.9943733082028869,
+          "neutral": 0.0052865248833418345
+        },
+        {
+          "contradiction": 0.0921121191530435,
+          "entailment": 0.0007947009857966697,
+          "neutral": 0.9070931798611599
+        },
+        {
+          "contradiction": 0.18445270532904956,
+          "entailment": 0.0036358336013738077,
+          "neutral": 0.8119114610695767
+        },
+        {
+          "contradiction": 0.01938676410795827,
+          "entailment": 0.0007626934060990197,
+          "neutral": 0.9798505424859427
+        }
+      ],
+      "flags": [],
+      "guard": null,
+      "source": "model"
+    },
+    {
+      "request": "Can we add a HubSpot CRM integration to the contact form?",
+      "label": "clarify",
+      "reason": "No strong, unambiguous match was established. Missing support is not proof that work is outside scope.",
+      "evidence": [
+        3,
+        4
+      ],
+      "scores": [
+        {
+          "contradiction": 0.003005801832069432,
+          "entailment": 0.0003437131509577093,
+          "neutral": 0.9966504850169727
+        },
+        {
+          "contradiction": 0.005987753667575346,
+          "entailment": 0.0007020259191958279,
+          "neutral": 0.9933102204132288
+        },
+        {
+          "contradiction": 0.03319495970177144,
+          "entailment": 0.000510479313569489,
+          "neutral": 0.966294560984659
+        },
+        {
+          "contradiction": 0.3095174463026915,
+          "entailment": 0.0005610405919385444,
+          "neutral": 0.6899215131053701
+        },
+        {
+          "contradiction": 0.09809546768844021,
+          "entailment": 0.0011782609507976056,
+          "neutral": 0.9007262713607622
+        }
+      ],
+      "flags": [],
+      "guard": null,
+      "source": "model"
+    },
+    {
+      "request": "Let’s make it eight pages instead of five pages.",
+      "label": "change",
+      "reason": "Quantity check: “eight pages” in this request exceeds “five-page” in scope. Confirm both refer to the same deliverable.",
+      "evidence": [
+        0,
+        1
+      ],
+      "scores": [
+        {
+          "contradiction": 0.9761042606641426,
+          "entailment": 0.0011403371667451998,
+          "neutral": 0.022755402169112322
+        },
+        {
+          "contradiction": 0.014322465362090855,
+          "entailment": 0.003371264043390533,
+          "neutral": 0.9823062705945185
+        },
+        {
+          "contradiction": 0.00444134968942745,
+          "entailment": 0.0013292314983872414,
+          "neutral": 0.9942294188121852
+        },
+        {
+          "contradiction": 0.008318520104943198,
+          "entailment": 0.0018590749581330844,
+          "neutral": 0.9898224049369237
+        },
+        {
+          "contradiction": 0.01342286705101305,
+          "entailment": 0.002753633992896856,
+          "neutral": 0.9838234989560901
+        }
+      ],
+      "flags": [
+        {
+          "index": 0,
+          "reason": "Quantity check: “eight pages” in this request exceeds “five-page” in scope. Confirm both refer to the same deliverable."
+        }
+      ],
+      "guard": null,
+      "source": "model"
+    },
+    {
+      "request": "Could it feel a little more premium?",
+      "source": "rule",
+      "reason": "This request needs a concrete deliverable or acceptance criteria."
+    }
+  ]
+}

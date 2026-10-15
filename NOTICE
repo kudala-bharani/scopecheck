@@ -1,0 +1,20 @@
+ScopeCheck
+Copyright 2026 ScopeCheck contributors
+
+Inference: cross-encoder/nli-deberta-v3-xsmall (Apache-2.0 model card),
+converted to ONNX by Xenova: Xenova/nli-deberta-v3-xsmall.
+https://huggingface.co/cross-encoder/nli-deberta-v3-xsmall
+https://huggingface.co/Xenova/nli-deberta-v3-xsmall
+Xenova conversion does not carry its own separate license declaration;
+we attribute it as an ONNX conversion of the Apache-2.0 base model.
+
+Transformers.js 3.8.1 by Hugging Face, Apache-2.0.
+https://github.com/huggingface/transformers.js
+ONNX Runtime by Microsoft, MIT.
+https://github.com/microsoft/onnxruntime
+These inference dependencies/assets are downloaded at the user's explicit request.
+
+DM Sans and Manrope typefaces, SIL Open Font License 1.1.
+Font license files are included in dist/fonts/.
+https://github.com/google/fonts/tree/main/ofl/dmsans
+https://github.com/google/fonts/tree/main/ofl/manrope

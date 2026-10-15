@@ -1,0 +1,491 @@
+{
+  "runtime": "onnxruntime-node cpu q8",
+  "rows": [
+    {
+      "id": "smoke-entailment",
+      "p": "A man is eating pizza.",
+      "h": "A man eats something.",
+      "tokens": 14,
+      "ms": 26.111694999999827,
+      "logits": [
+        -4.577641487121582,
+        3.296208143234253,
+        -0.2126433104276657
+      ],
+      "probabilities": [
+        0.00036937020814891206,
+        0.9705799375329222,
+        0.02905069225892895
+      ],
+      "prediction": "entailment"
+    },
+    {
+      "id": "smoke-contradiction",
+      "p": "A man is eating pizza.",
+      "h": "No one is eating anything.",
+      "tokens": 15,
+      "ms": 19.506411999999955,
+      "logits": [
+        5.7253289222717285,
+        -3.815457582473755,
+        -2.3926713466644287
+      ],
+      "probabilities": [
+        0.9996301522979387,
+        0.000071833729583651,
+        0.00029801397247777335
+      ],
+      "prediction": "contradiction"
+    },
+    {
+      "id": "smoke-neutral",
+      "p": "A man is eating pizza.",
+      "h": "The man is Italian.",
+      "tokens": 14,
+      "ms": 11.56248699999992,
+      "logits": [
+        -2.7731804847717285,
+        -1.36133873462677,
+        4.506480693817139
+      ],
+      "probabilities": [
+        0.000687001928956059,
+        0.0028191165935605015,
+        0.9964938814774835
+      ],
+      "prediction": "neutral"
+    },
+    {
+      "id": "a-imperative",
+      "p": "We will build a responsive landing page.",
+      "h": "Build a responsive landing page.",
+      "tokens": 17,
+      "ms": 11.225126000000046,
+      "logits": [
+        -3.95145583152771,
+        3.779871940612793,
+        -1.6129077672958374
+      ],
+      "probabilities": [
+        0.0004366827742830899,
+        0.9950365873378004,
+        0.004526729887916569
+      ],
+      "prediction": "entailment"
+    },
+    {
+      "id": "a-polite",
+      "p": "We will build a responsive landing page.",
+      "h": "Please make the landing page responsive.",
+      "tokens": 18,
+      "ms": 10.637114999999994,
+      "logits": [
+        -2.035207748413086,
+        1.3816875219345093,
+        0.008698401972651482
+      ],
+      "probabilities": [
+        0.025513223326152287,
+        0.7775066133356509,
+        0.19698016333819693
+      ],
+      "prediction": "entailment"
+    },
+    {
+      "id": "a-declarative",
+      "p": "We will build a responsive landing page.",
+      "h": "The freelancer will build a responsive landing page.",
+      "tokens": 20,
+      "ms": 18.273793999999953,
+      "logits": [
+        -1.1541205644607544,
+        -1.6066486835479736,
+        2.8336949348449707
+      ],
+      "probabilities": [
+        0.017994364833989314,
+        0.01144474330996689,
+        0.9705608918560438
+      ],
+      "prediction": "neutral"
+    },
+    {
+      "id": "b-three-concepts",
+      "p": "Design three homepage concepts and implement one selected concept.",
+      "h": "Implement all three homepage concepts.",
+      "tokens": 19,
+      "ms": 15.044890000000123,
+      "logits": [
+        2.0117709636688232,
+        -1.495320439338684,
+        -0.5067400336265564
+      ],
+      "probabilities": [
+        0.9004437839956225,
+        0.026998905607160343,
+        0.07255731039721718
+      ],
+      "prediction": "contradiction"
+    },
+    {
+      "id": "b-declarative",
+      "p": "The freelancer will design three homepage concepts and implement one selected concept.",
+      "h": "The freelancer will implement all three homepage concepts.",
+      "tokens": 25,
+      "ms": 22.473560000000134,
+      "logits": [
+        1.8099024295806885,
+        -1.5171747207641602,
+        -0.33256882429122925
+      ],
+      "probabilities": [
+        0.8671054105180634,
+        0.031127242482010552,
+        0.10176734699992604
+      ],
+      "prediction": "contradiction"
+    },
+    {
+      "id": "c-copy-exclusion",
+      "p": "Copywriting is excluded. The client will provide final copy.",
+      "h": "Write the page copy.",
+      "tokens": 19,
+      "ms": 12.99684000000002,
+      "logits": [
+        1.4983506202697754,
+        -0.8062998056411743,
+        -0.7393547892570496
+      ],
+      "probabilities": [
+        0.8288460002063046,
+        0.08271359238254294,
+        0.08844040741115239
+      ],
+      "prediction": "contradiction"
+    },
+    {
+      "id": "c-declarative",
+      "p": "Copywriting is excluded. The client will provide final copy.",
+      "h": "The freelancer will write the page copy.",
+      "tokens": 22,
+      "ms": 10.18854199999987,
+      "logits": [
+        3.802548885345459,
+        -2.554157257080078,
+        -1.301183819770813
+      ],
+      "probabilities": [
+        0.9922514055599309,
+        0.0017216280189054438,
+        0.006026966421163846
+      ],
+      "prediction": "contradiction"
+    },
+    {
+      "id": "d-condition",
+      "p": "Integrate Stripe if API access is supplied by Friday.",
+      "h": "Integrate Stripe.",
+      "tokens": 16,
+      "ms": 27.952724999999873,
+      "logits": [
+        -3.625286340713501,
+        3.4057118892669678,
+        -1.419029951095581
+      ],
+      "probabilities": [
+        0.0008762392204117879,
+        0.9911660589208791,
+        0.007957701858709216
+      ],
+      "prediction": "entailment"
+    },
+    {
+      "id": "d-declarative",
+      "p": "The freelancer will integrate Stripe if API access is supplied by Friday.",
+      "h": "The freelancer will integrate Stripe.",
+      "tokens": 22,
+      "ms": 20.04366300000015,
+      "logits": [
+        -3.9880189895629883,
+        3.6142098903656006,
+        -1.3455578088760376
+      ],
+      "probabilities": [
+        0.0004956132439021307,
+        0.992542143188496,
+        0.006962243567601779
+      ],
+      "prediction": "entailment"
+    },
+    {
+      "id": "e-crm-exclusion",
+      "p": "Build a contact form. CRM integration is excluded.",
+      "h": "Make contact form submissions create HubSpot contacts.",
+      "tokens": 21,
+      "ms": 13.23899799999981,
+      "logits": [
+        -1.7581208944320679,
+        -1.378416657447815,
+        3.387727737426758
+      ],
+      "probabilities": [
+        0.005741220250122888,
+        0.008392815244834838,
+        0.9858659645050423
+      ],
+      "prediction": "neutral"
+    },
+    {
+      "id": "e-declarative",
+      "p": "The freelancer will build a contact form. CRM integration is excluded.",
+      "h": "The freelancer will make contact form submissions create HubSpot contacts.",
+      "tokens": 27,
+      "ms": 15.468803999999864,
+      "logits": [
+        -1.9462924003601074,
+        -1.089869737625122,
+        3.2778735160827637
+      ],
+      "probabilities": [
+        0.0052893000266353365,
+        0.012454830999615649,
+        0.9822558689737492
+      ],
+      "prediction": "neutral"
+    },
+    {
+      "id": "f-actor",
+      "p": "The client will write the page copy.",
+      "h": "The freelancer will write the page copy.",
+      "tokens": 19,
+      "ms": 15.968168999999989,
+      "logits": [
+        4.151412487030029,
+        -2.954655170440674,
+        -1.2954741716384888
+      ],
+      "probabilities": [
+        0.994896365675614,
+        0.000815928067206846,
+        0.004287706257179121
+      ],
+      "prediction": "contradiction"
+    },
+    {
+      "id": "f-same-actor",
+      "p": "The client will write the page copy.",
+      "h": "The client will write the page copy.",
+      "tokens": 19,
+      "ms": 10.3225809999999,
+      "logits": [
+        -3.0824811458587646,
+        3.46268630027771,
+        -2.0725319385528564
+      ],
+      "probabilities": [
+        0.001429350113941106,
+        0.9946464240894701,
+        0.003924225796588676
+      ],
+      "prediction": "entailment"
+    },
+    {
+      "id": "g-one-more",
+      "p": "Include two rounds of revisions.",
+      "h": "One more round of revisions.",
+      "tokens": 15,
+      "ms": 25.877697000000126,
+      "logits": [
+        2.810363531112671,
+        -1.7853739261627197,
+        -1.0189826488494873
+      ],
+      "probabilities": [
+        0.9691626140552146,
+        0.009783477142466024,
+        0.021053908802319197
+      ],
+      "prediction": "contradiction"
+    },
+    {
+      "id": "g-three",
+      "p": "The scope includes exactly two rounds of revisions.",
+      "h": "The scope includes three rounds of revisions.",
+      "tokens": 20,
+      "ms": 13.107767000000194,
+      "logits": [
+        3.481386423110962,
+        -2.9579718112945557,
+        -0.6402481198310852
+      ],
+      "probabilities": [
+        0.9824964182752064,
+        0.0015694707550098577,
+        0.01593411096978372
+      ],
+      "prediction": "contradiction"
+    },
+    {
+      "id": "g-two",
+      "p": "The scope includes exactly two rounds of revisions.",
+      "h": "The scope includes two rounds of revisions.",
+      "tokens": 20,
+      "ms": 9.523415999999997,
+      "logits": [
+        -3.6818811893463135,
+        3.5602710247039795,
+        -1.610304355621338
+      ],
+      "probabilities": [
+        0.0007112198893630408,
+        0.9936435937837756,
+        0.005645186326861275
+      ],
+      "prediction": "entailment"
+    },
+    {
+      "id": "h-mixed",
+      "p": "Build a responsive homepage.",
+      "h": "Make the homepage responsive and add a blog.",
+      "tokens": 17,
+      "ms": 15.879844999999932,
+      "logits": [
+        -2.7890474796295166,
+        -1.8956223726272583,
+        5.0299906730651855
+      ],
+      "probabilities": [
+        0.00040145243319801127,
+        0.0009809428104197112,
+        0.9986176047563823
+      ],
+      "prediction": "neutral"
+    },
+    {
+      "id": "h-responsive",
+      "p": "Build a responsive homepage.",
+      "h": "Make the homepage responsive.",
+      "tokens": 13,
+      "ms": 26.730068999999958,
+      "logits": [
+        -4.105406284332275,
+        3.8158745765686035,
+        -1.4929143190383911
+      ],
+      "probabilities": [
+        0.00036101983348275473,
+        0.9947172034649036,
+        0.00492177670161374
+      ],
+      "prediction": "entailment"
+    },
+    {
+      "id": "h-blog",
+      "p": "Build a responsive homepage.",
+      "h": "Add a blog.",
+      "tokens": 12,
+      "ms": 19.66813100000013,
+      "logits": [
+        0.10254501551389694,
+        -1.887831211090088,
+        1.690346360206604
+      ],
+      "probabilities": [
+        0.16584784475316197,
+        0.022662114003493876,
+        0.8114900412433442
+      ],
+      "prediction": "neutral"
+    },
+    {
+      "id": "i-design-only",
+      "p": "Landing-page design only; no implementation.",
+      "h": "Ship the production landing page.",
+      "tokens": 18,
+      "ms": 35.5925129999996,
+      "logits": [
+        4.12883996963501,
+        -2.7729740142822266,
+        -1.464522361755371
+      ],
+      "probabilities": [
+        0.9952938034807987,
+        0.001001224738915937,
+        0.0037049717802852384
+      ],
+      "prediction": "contradiction"
+    },
+    {
+      "id": "i-paraphrase",
+      "p": "Landing-page design; implementation is not included.",
+      "h": "Ship the production landing page.",
+      "tokens": 19,
+      "ms": 18.54292600000008,
+      "logits": [
+        3.613884449005127,
+        -2.6559853553771973,
+        -1.0258418321609497
+      ],
+      "probabilities": [
+        0.988579126809373,
+        0.0018708612425927817,
+        0.009550011948034258
+      ],
+      "prediction": "contradiction"
+    },
+    {
+      "id": "i-declarative",
+      "p": "The freelancer will design the landing page; implementation is not included.",
+      "h": "The freelancer will ship the production landing page.",
+      "tokens": 25,
+      "ms": 33.67311500000005,
+      "logits": [
+        3.5448906421661377,
+        -2.3993499279022217,
+        -1.2046104669570923
+      ],
+      "probabilities": [
+        0.9888488459905574,
+        0.0025916660065176,
+        0.008559488002924977
+      ],
+      "prediction": "contradiction"
+    },
+    {
+      "id": "j-irrelevant",
+      "p": "We will build a responsive landing page. The project logo will be blue.",
+      "h": "Build a responsive landing page.",
+      "tokens": 24,
+      "ms": 12.625829000000067,
+      "logits": [
+        -4.212579250335693,
+        3.77605938911438,
+        -1.2973358631134033
+      ],
+      "probabilities": [
+        0.0003370708630417109,
+        0.9934428583167257,
+        0.00622007082023263
+      ],
+      "prediction": "entailment"
+    },
+    {
+      "id": "j-reordered",
+      "p": "The project logo will be blue. We will build a responsive landing page.",
+      "h": "Build a responsive landing page.",
+      "tokens": 24,
+      "ms": 12.642886999999973,
+      "logits": [
+        -3.9706242084503174,
+        3.6001064777374268,
+        -1.3379379510879517
+      ],
+      "probabilities": [
+        0.000511386325705456,
+        0.9923746732295199,
+        0.007113940444774614
+      ],
+      "prediction": "entailment"
+    }
+  ]
+}
